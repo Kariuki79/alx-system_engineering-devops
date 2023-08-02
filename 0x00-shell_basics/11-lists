@@ -1,0 +1,2 @@
+#!/bin/bash
+find "$(pwd)" "$(pwd)/.." /boot -maxdepth 1 -type f -ls
