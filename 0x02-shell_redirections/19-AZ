@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "Enter input: " | sed -e 's/[Aa]/Z/g' -e 's/[cC]/e/g'
+
