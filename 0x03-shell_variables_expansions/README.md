@@ -11,4 +11,5 @@ echo $PATH | tr ":" "\n" | wc -l counts the number of directories in the PATH.
 'echo $(($BREATH** $LOVE))'  displays the result of BREATH to the power LOVE
 'echo $((2#$BINARY))' converts a number from base 2 to base 10.
 'echo {a..z}{a..z} | tr ' ' '\n' | grep -v 'oo'' prints all possible combinations of two letters, except oo
+'echo printf "%.2f\n" $NUM' prints a number with two decimal places, followed by a new line
 
