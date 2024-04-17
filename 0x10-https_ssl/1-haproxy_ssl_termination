@@ -39,12 +39,12 @@ frontend www-ssl
         http-request set-header X-Forwarded-Proto https
         default_backend web-backend
 
-frontend www-http
+frontend http
         bind *:80
         mode http
         http-request redirect scheme https code 301 if !{ ssl_fc }
 
 backend web-backend
         balance roundrobin
-        server 112100-web-01 54.174.243.239 check
-        server 112100-web-02 54.164.20.183 check
+        server 112100-web-01 54.174.218.185:80 check
+        server 112100-web-02 54.210.173.234:80 check
