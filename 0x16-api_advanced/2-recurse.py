@@ -23,4 +23,4 @@ def course(subreddit, hot_list=[], count=0, after=None):
         return hot_1
 
     return recurse(subreddit, hot_1, info.get("data").get("count"),
-            info.get("data").get("after"))
+            info.get("data").get("after")
